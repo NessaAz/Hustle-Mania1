@@ -8,40 +8,5 @@ body{
 
 }
 
-/* About-us Section */
-.banner{
-    background-image: url("../assets/about-us.jpg");
-    background-size: cover;
-    height: 100vh;
-    /* width: 100vw; */
-    /* background-repeat: no-repeat; */
-}
-.rectangle{
-    height: 50vh;
-    width: 50vh;
-    background-color: rgba(255, 255, 255, 0.5);
-}
 
-
-
-
-/* Booking Section CSS*/
-/* Booking Section CSS*/
-
-
-/* SELECTION PAGE  */
-.selection{
-    background: url("../assets/selection.jpg");
-    height: 75vh;
-    width: 100vw;
-}
-.book-button{
-   background-color: #82C232;
-   color: white;  
-}
-.book-button:hover, .register-button:hover{
-    color: white;
-    width: 8vw;
-}
-/* SELECTION PAGE  */
 
