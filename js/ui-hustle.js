@@ -4,5 +4,8 @@ $(document).ready(function(){
     })
     
     //sense input location and produce buttons with repective locations
+    $('select').on('change', function() {
+        alert( this.value );
+      });
     
 })

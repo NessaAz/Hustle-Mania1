@@ -8,16 +8,8 @@ body{
 
 }
 
-/* Booking Section CSS*/
 
-
-
-/* SELECTION PAGE  */
-.selection{
-    background: url("../assets/selection.jpg");
-    height: 75vh;
-    width: 100vw;
-}
+/* SELECTION PAGE */
 .book-button{
    background-color: #82C232;
    color: white;  
@@ -26,7 +18,15 @@ body{
     color: white;
     width: 8vw;
 }
-/* SELECTION PAGE  */
+
+/*BOOKING PAGE */
+.locationsBtn{
+    display: none;
+}
+.locationsBtnShow{
+    display: block;
+}
+
 
 
 
