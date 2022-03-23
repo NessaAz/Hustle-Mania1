@@ -28,8 +28,9 @@
     <script src="https://use.fontawesome.com/00f3447240.js"></script>
 
     <!--Javascript Files-->
-    <script src="./js/bl-hustle.js" defer></script>
-    <script src="./js/ui-hustle.js" defer></script>
+    <script src="./js/bl-hustle.js" defer></script><!--Business Logic-->
+    <script src="./js/ui-hustle.js" defer></script><!--UI Logic-->
+    
 </head>
 
 <body>
@@ -50,7 +51,7 @@
                         device meets our standards. Click the button below to proceed
                     </p>
                 </div>
-                <button type="button" class="register-button btn btn-dark rounded-pill">Register</button>
+                <button type="button" class="register-button btn btn-lg btn-dark rounded-pill">Register</button>
             </div>
 
             <!--Redirects to booking page -->
@@ -61,7 +62,7 @@
                     want at an affordable fee; and get working. An added bonus you get a serene working space
                     that has internet and comfortable sitting arrangements
                 </p>
-                <button type="button" class="book-button btn rounded-pill">Book Here</button>
+                <button type="button" class="book-button btn btn-lg  rounded-pill">Book Here</button>
 
             </div>
         </div>
@@ -69,10 +70,11 @@
 
     <!--Booking Section-->
     <section class="booking container p-5">
-        <h1 class="fs-1">WHERE ARE YOU LOCATED?</h1>
-        <form>
-            <div class="form-group col-md-12 form-control-lg">
-                <select id="inputCity" class="form-control form-control-lg">
+       
+        <form class ="location-form m-5">
+            <h1 class="fs-1">WHERE ARE YOU LOCATED?</h1>
+            <div class="form-group form-control-lg">
+                <select id="inputCity" class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                     <option>Nairobi</option>
                     <option>Mombasa</option>
                     <option>Kisusmu</option>
@@ -80,8 +82,42 @@
                     <option>Kericho</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-dark locationsBtn"></button>
+            <!--Add a button with locations based on input sensed-->
         </form>
+
+        <!--Next Page of booking-->
+        <form class="laptop-form m-5 ">
+            <h1 class="fs-1">WHICH LAPTOP WOULD YOU LIKE TO BOOK?</h1>
+            <div class="form-group form-control-lg">
+                <select id="inputLaptop" class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option>Dell</option>
+                    <option>Apple</option>
+                    <option>Hp</option>
+                    <option>Lenovo</option>
+                    <option>Asus</option>
+                </select>
+            </div>
+            <!--Add a button with laptops based on input sensed-->
+        </form>
+        <!--Date and time selection-->
+        <form class="laptop-form m-5 ">
+            <h1 class="fs-1">WHAT DATE AND TIME WOULD YOU LIKE THE SLOT?</h1>
+            <div class="form-group form-control-lg">
+                <select id="inputLaptop" class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option>Dell</option>
+                    <option>Apple</option>
+                    <option>Hp</option>
+                    <option>Lenovo</option>
+                    <option>Asus</option>
+                </select>
+            </div>
+            <!--Add a button with laptops based on input sensed-->
+        </form>
+
+        <!--Date and time Picker-->
+
+        
+        
     </section>
 
 
