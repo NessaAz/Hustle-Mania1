@@ -5,17 +5,29 @@ body{
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: rgb(23, 24, 22);
+    background-color:#222629;
 }
 
 /*HOME PAGE SECTION*/
 .home {
-    background-color:#222629;
-    
+    overflow-x: hidden;
 }
 
 .title {
     color: #82C232;
     font-size: 36px;
-    
 }
+
+.title1 {
+    position: absolute;
+    left: 22vw;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+
+
