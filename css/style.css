@@ -18,6 +18,10 @@ body{
     background-color: rgba(255, 255, 255, 0.5);
     color: seagreen;
 }
+.pro img{
+    border-radius: 50%;
+    width: 20%;
+}
 
 
 
