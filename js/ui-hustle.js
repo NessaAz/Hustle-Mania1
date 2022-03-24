@@ -27,6 +27,34 @@ $(document).ready(function () {
     })
 
 
+    // ease in Laptop selection page 
+
+    
+
+
+
+
+
+            /*
+             
+
+        $(this).on("submit", function(){
+            $(".booking-container").animate({
+                position: "absolute",
+                right: "0",
+            }, 1000, function(){$(".booking-container").show()})
+            $(".laptop-container").animate({
+                right: "+= 100",
+            }, 1000, function(){
+                $(".laptop-container").hide()
+            })
+        })
+        
+    }) */
+       
+    
+
+
     //LOCATION BUTTON THAT POPUP ON SELECT
     $("#inputCity").change(function () {
         let selectedLocation = $(".location:selected").text()
@@ -37,7 +65,18 @@ $(document).ready(function () {
                     `<button type="button" class="m-2 location-button btn btn-secondary rounded-pill">
                     ${element}</button>`
                 )
-            });
+            })
+            $(".location-button").on('click', function(){
+                $(".booking-container").animate({
+                    position: "absolute",
+                    right: "0",
+                }, 500, function(){$(".booking-container").hide()})
+                $(".laptop-container").animate({
+                    right: "+= 100",
+                }, 500, function(){
+                    $(".laptop-container").show()
+                })  
+            })           
         } else if (selectedLocation == "Nairobi") {
             resetLocations()
             nairobi.forEach(element => {
@@ -45,8 +84,19 @@ $(document).ready(function () {
                     `<button type="button" class="m-2 location-button btn btn-secondary rounded-pill">
                     ${element}</button>`
                 )
-
             })
+            $(".location-button").on('click', function(){
+                $(".booking-container").animate({
+                    position: "absolute",
+                    right: "0",
+                }, 500, function(){$(".booking-container").hide()})
+                $(".laptop-container").animate({
+                    right: "+= 100",
+                }, 500, function(){
+                    $(".laptop-container").show()
+                })  
+            }) 
+
         } else if (selectedLocation == "Kiambu") {
             resetLocations()
             kiambu.forEach(element => {
@@ -54,8 +104,18 @@ $(document).ready(function () {
                     `<button type="button" class="m-2 location-button btn btn-secondary rounded-pill">
                     ${element}</button>`
                 )
-
             })
+            $(".location-button").on('click', function(){
+                $(".booking-container").animate({
+                    position: "absolute",
+                    right: "0",
+                }, 500, function(){$(".booking-container").hide()})
+                $(".laptop-container").animate({
+                    right: "+= 100",
+                }, 500, function(){
+                    $(".laptop-container").show()
+                })  
+            })  
         } else if (selectedLocation == "Kericho") {
             resetLocations()
             kericho.forEach(element => {
@@ -63,7 +123,17 @@ $(document).ready(function () {
                     `<button type="button" class="m-2 location-button btn btn-secondary rounded-pill">
                     ${element}</button>`
                 )
-
+            })
+            $(".location-button").on('click', function(){
+                $(".booking-container").animate({
+                    position: "absolute",
+                    right: "0",
+                }, 500, function(){$(".booking-container").hide()})
+                $(".laptop-container").animate({
+                    right: "+= 100",
+                }, 500, function(){
+                    $(".laptop-container").show()
+                })  
             })
         } else if (selectedLocation == "Kisumu") {
             resetLocations()
@@ -73,9 +143,21 @@ $(document).ready(function () {
                     ${element}</button>`
                 )
             })
+            $(".location-button").on('click', function(){
+                $(".booking-container").animate({
+                    position: "absolute",
+                    right: "0",
+                }, 500, function(){$(".booking-container").hide()})
+                $(".laptop-container").animate({
+                    right: "+= 100",
+                }, 500, function(){
+                    $(".laptop-container").show()
+                })  
+            })
         } else {
             resetLocations()
         }
+        
 
     })
 
@@ -97,7 +179,18 @@ $(document).ready(function () {
                     `<button type="button" class="m-2 laptop-button btn btn-secondary rounded-pill">
                     ${element}</button>`
                 )
-            });
+            })
+            $(".laptop-button").on('click', function(){
+                $(".laptop-container").animate({
+                    position: "absolute",
+                    right: "0",
+                }, 500, function(){$(".laptop-container").hide()})
+                $(".date-container").animate({
+                    right: "+= 100",
+                }, 500, function(){
+                    $(".date-container").show()
+                })  
+            })   
         } else if (selectedLaptop == "Apple") {
             resetLaptops()
             apple.forEach(element => {
@@ -107,6 +200,17 @@ $(document).ready(function () {
                 )
 
             })
+            $(".laptop-button").on('click', function(){
+                $(".laptop-container").animate({
+                    position: "absolute",
+                    right: "0",
+                }, 500, function(){$(".laptop-container").hide()})
+                $(".date-container").animate({
+                    right: "+= 100",
+                }, 500, function(){
+                    $(".date-container").show()
+                })  
+            })   
         } else if ( selectedLaptop == "Hp") {
             resetLaptops()
             hp.forEach(element => {
@@ -115,6 +219,17 @@ $(document).ready(function () {
                     ${element}</button>`
                 )
             })
+            $(".laptop-button").on('click', function(){
+                $(".laptop-container").animate({
+                    position: "absolute",
+                    right: "0",
+                }, 500, function(){$(".laptop-container").hide()})
+                $(".date-container").animate({
+                    right: "+= 100",
+                }, 500, function(){
+                    $(".date-container").show()
+                })  
+            })   
         } else if ( selectedLaptop == "Asus") {
             resetLaptops()
             asus.forEach(element => {
@@ -123,6 +238,17 @@ $(document).ready(function () {
                     ${element}</button>`
                 )
             })
+            $(".laptop-button").on('click', function(){
+                $(".laptop-container").animate({
+                    position: "absolute",
+                    right: "0",
+                }, 500, function(){$(".laptop-container").hide()})
+                $(".date-container").animate({
+                    right: "+= 100",
+                }, 500, function(){
+                    $(".date-container").show()
+                })  
+            })   
         } else if (selectedLaptop == "Lenovo") {
             resetLaptops()
             lenovo.forEach(element => {
@@ -131,6 +257,17 @@ $(document).ready(function () {
                     ${element}</button>`
                 )
             })
+            $(".laptop-button").on('click', function(){
+                $(".laptop-container").animate({
+                    position: "absolute",
+                    right: "0",
+                }, 500, function(){$(".laptop-container").hide()})
+                $(".date-container").animate({
+                    right: "+= 100",
+                }, 500, function(){
+                    $(".date-container").show()
+                })  
+            })   
         } else{
             resetLaptops()
         }
@@ -140,6 +277,7 @@ $(document).ready(function () {
     function resetLaptops() {
         $(".buttonsLaptop").empty()
     }
+    
     
 
 
