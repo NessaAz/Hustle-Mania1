@@ -10,7 +10,8 @@
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+        crossorigin="anonymous">
 
     <!--CSS File-->
     <link rel="stylesheet" href="./css/style.css">
@@ -36,34 +37,50 @@
     <!-- JS UI Logic-->
     <script src="./js/ui-hustle.js" defer></script>
 
-    <script src="./js/particles.js"></script>
 </head>
 
 <body>
     <!--HOME PAGE SECTION-->
     <div id="particles-js"></div>
-    <section class="home container-fluid text-center">
-        <header class="main">
+    <section class="home container-fluid ">
+        <header class="main text-center">
             <div class="row">
-                <div class="col-sm-12 my-auto m-5">
-                    <h1 class="title mt-5">Hustle Mania</h1>
+                <div class="col-sm-12 my-auto m-4 text-center">
+                    <h1 class="title mt-5 pt-3">Hustle Mania</h1>
                     <div>
-                       <p class="title1 mt-2">CO - WORKING SPACE <br>LAPTOPS TO HIRE AT OUR SPACE</p>
-                       <p class="description ">Getting your work done shouldn't be hustle. Lack of a PC shouldn't make <br> 
+                       <p class=" col-sm-12 title1 mt-2 fs-2 p-2">CO-WORKING SPACE & <br>LAPTOPS TO HIRE AT OUR SPACE</p>
+                       <p class=" col-sm-12 description fs-3 p-2">Getting your work done shouldn't be hustle. Lack of a PC shouldn't make <br> 
                         you miss out on big opportunities. We offer you a place to get your work <br> 
                         done  comfortably using the laptop you prefer </p>
-                        <p class="scroll">| <br> scroll</p>
+                        <p class=" col-sm-12 scroll fs-1">| </p>
+                        <p> scroll</p>
                         
                     </div> 
-                    <div class="button col-md-6 d-flex justify-content-end text-white p-5">
-                        <button type="submit">Book Space Now</button>
-                    </div>
-    
                 </div>
-
             </div>
-
         </header>
+        <button class ="home-button btn btn-dark rounded-pill m-5"type="submit">Book Space Now</button>
+    </section>
+
+    <!--About US -->
+    <section class="about container-fluid banner">
+            <div class="p-5">
+                <h3 class="about-title">Hustle Mania</h3>
+                <div class="title">
+                    <div class="rectangle m-5 p-5">
+                        <div class="about-text text-black">
+                            <p class="text-center p-5 fs-4">Hustle Mania is a startup tech that comes into place when
+                                one needs a conducive working space that enables one to work
+                                from with or without their laptop. It also avails laptops for
+                                those without and are in need of accessing one. It also gives an
+                                opportunity for people to earn something from renting out their own
+                                laptops for use at the space.
+                            </p>
+                        </div>
+                    </div>
+                    <button class ="about-button btn btn-dark rounded-pill "type="submit">Book Space Now</button>
+                </div>
+            </div>
     </section>
 
     <!--Booking or Signup Selection Page-->
@@ -95,6 +112,31 @@
                 </p>
                 <button type="button" class="book-button btn btn-lg  rounded-pill">Book Here</button>
 
+            </div>
+        </div>
+    </section>
+
+    <!--Team-->
+    <section class="container-fluid team pt-5 p-5 h-100">
+        <div class="row text-center p-5">
+            <div class="pro col-md-6 ">
+                <img class="p-2 w-50 rounded-circle " src="./assets/e.jpeg" alt="person1">
+            </div>
+            <div class="pro col-md-6">
+                <img class="p-2 w-50 rounded-circle" src="./assets/mat.png" alt="person1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <h2>THE TEAM</h2>
+            </div>
+        </div>
+        <div class="row text-center p-5">
+            <div class="pro col-md-6">
+                <img class="w-50 p-2 rounded-circle" src="./assets/mit.png" alt="person1">
+            </div>
+            <div class="pro col-md-6">
+                <img class="w-50 p-2 rounded-circle" src="./assets/v.jpg" alt="person1">
             </div>
         </div>
     </section>

@@ -4,77 +4,92 @@ body{
     font-family: 'Fredoka', sans-serif;
     margin: 0;
     padding: 0;
-
     width: 100%;
+    overflow-x: hidden;
 
 }
-
 /*HOME PAGE SECTION*/
 .home {
     overflow-x: hidden;
     background-color: #222629;
-    height: 100vh;
 }
 
 .title {
     color: #82C232;
-    font-size: 36px;
+    font-size: 23px;
 }
 
 .title1 {
-    position: absolute;
-    left: 30vw;
     text-align: center;
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
-    line-height: 60px;
     color: #FFFFFF;
 }
 
 .description {
-    position: absolute;
-    top: 50vh;
-    left: 12vw;
-    text-align: center;
     font-style:normal;
     font-weight: 80;
-    font-size: 35px;
-    line-height: 40px;
     color: #FFFFFF;
 }
 
 .scroll {
-    position: absolute;
-    top: 85vh;
-    left: 49vw;
     text-align: center;
-    font-style:normal;
-    font-weight: 120;
-    font-size: 20px;
-    font-stretch: narrower;
-    line-height: 30px;
     color: #FFFFFF;
 }
 
 .fa-solid {
     color: #82C232  ;
 }
-
-.button button{
-    position: absolute;
-    bottom: 30px;
-    left: 80vw;
+.home-button{
     background-color: #82C232;
+    border-color: #82C232;
+    float: right;
+}
+.home-button:hover{
+    background-color: white;
+    border-color: white;
+    color: #222629;
+}
+/* About Section */
+.banner{
+    background-image: url("../assets/about-us.jpg");
+    background-position: bottom ;
+    margin: 0;
+}
+.rectangle{
+    width: 50vw;
+    background-color: rgba(255, 255, 255, 0.5);
     color: white;
-    border: none;
-    width: 180px;
-    height: 40px;
-    border-radius: 10px;
-    padding: 10px;
+}
+.about-title{
+    float: right;
+    color: white;
+    font-size: 23px;
+    margin: 2px;
+}
+.about-button{
+    float: right;
+    background-color: #82C232;
+    border-color: #82C232;
 
-}   
-    
+}
+.about-button:hover{
+    background-color: white;
+    border-color: white;
+    color: #222629;
+}
+/*Team*/
+
+.team{
+    margin: 0;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #222629;
+    color: white;
+}
+
 
 
 
