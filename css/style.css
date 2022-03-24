@@ -44,22 +44,18 @@ canvas {
 .scroll {
     text-align: center;
     color: #FFFFFF;
+    top: 90vh;
 }
 .scroll-text{
     color: white;
 }
+
+
+
 .fa-solid {
     color: #82C232  ;
 }
-<<<<<<< HEAD
-
-.button button {
-    position: absolute;
-    bottom: 30px;
-    left: 80vw;
-=======
 .home-button{
->>>>>>> 82d736b6799badb41430453a91c127066d24e36b
     background-color: #82C232;
     border-color: #82C232;
     float: right;
@@ -101,14 +97,7 @@ canvas {
 }
 /*Team*/
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-
-=======
-}   
     
-=======
 .team{
     margin: 0;
     height: 50vh;
@@ -117,7 +106,6 @@ canvas {
     justify-content: space-between;
     background-color: #222629;
     color: white;
->>>>>>> 82d736b6799badb41430453a91c127066d24e36b
 }
 
 
@@ -559,4 +547,4 @@ input[type="date"] {
 
 
 
->>>>>>> fcb89998c57b299edcf9efb633330ed5e1256c61
+
