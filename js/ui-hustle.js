@@ -1,13 +1,5 @@
 $(document).ready(function () {
-    $(".rectangle").hover(function(){
-        $(this).hide();
-        $(".about-text").show()
-    })
-    $(".rectangle").mouseleave(function(){
-        $(this).show();
-        $(".about-text").hide()
-    })
-
+    
 
     // Ease in the lender registration form
     $(".register-button").on("click", function(){
