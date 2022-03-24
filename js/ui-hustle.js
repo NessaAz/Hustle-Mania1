@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    
 
     // Ease in the lender registration form
     $(".register-button").on("click", function(){
@@ -37,7 +37,6 @@ $(document).ready(function () {
 
             /*
              
-
         $(this).on("submit", function(){
             $(".booking-container").animate({
                 position: "absolute",
@@ -297,27 +296,3 @@ $(document).ready(function () {
 
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
