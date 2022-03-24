@@ -1,13 +1,36 @@
 $(document).ready(function () {
-    $(".book-button").on('click', function () {
-        // redirect to booking section
+
+
+    // Ease in the lender registration form
+    $(".register-button").on("click", function(){
+        $(".selection").animate({
+            position: "absolute",
+            right: "0",
+        }, 1000, function(){$(".selection").hide()})
+        $(".register-container").animate({
+            right: "+= 100",
+        }, 1000, function(){
+            $(".register-container").show()
+        })
+    })
+    // Ease in the booking registration form
+    $(".book-button").on("click", function(){
+        $(".selection").animate({
+            position: "absolute",
+            right: "0",
+        }, 1000, function(){$(".selection").hide()})
+        $(".booking-container").animate({
+            right: "+= 100",
+        }, 1000, function(){
+            $(".booking-container").show()
+        })
     })
 
-    //sense input location and produce buttons with repective locations
+
+    //LOCATION BUTTON THAT POPUP ON SELECT
     $("#inputCity").change(function () {
-        $(".location-form").submit()
-        let selected = $(".location:selected").text()
-        if (selected == "Mombasa") {
+        let selectedLocation = $(".location:selected").text()
+        if (selectedLocation == "Mombasa") {
             resetLocations()
             mombasa.forEach(element => {
                 $(".buttonsLocate").append(
@@ -15,7 +38,7 @@ $(document).ready(function () {
                     ${element}</button>`
                 )
             });
-        } else if (selected == "Nairobi") {
+        } else if (selectedLocation == "Nairobi") {
             resetLocations()
             nairobi.forEach(element => {
                 $(".buttonsLocate").append(
@@ -24,7 +47,7 @@ $(document).ready(function () {
                 )
 
             })
-        } else if (selected == "Kiambu") {
+        } else if (selectedLocation == "Kiambu") {
             resetLocations()
             kiambu.forEach(element => {
                 $(".buttonsLocate").append(
@@ -33,7 +56,7 @@ $(document).ready(function () {
                 )
 
             })
-        } else if (selected == "Kericho") {
+        } else if (selectedLocation == "Kericho") {
             resetLocations()
             kericho.forEach(element => {
                 $(".buttonsLocate").append(
@@ -42,7 +65,7 @@ $(document).ready(function () {
                 )
 
             })
-        } else if (selected == "Kisumu") {
+        } else if (selectedLocation == "Kisumu") {
             resetLocations()
             kisumu.forEach(element => {
                 $(".buttonsLocate").append(
@@ -56,56 +79,55 @@ $(document).ready(function () {
 
     })
 
-
+    // CLEAR PRIOR SELECTS
     function resetLocations() {
         $(".buttonsLocate").empty()
     }
-    function resetLaptops() {
-        $(".buttonsLaptop").empty()
-    }
+    // SLIDE IN THE LAPTOP SELECTION FORM 
 
 
+   
+    // LAPTOP BUTTONS THAT POPUP ON SELECT
     $("#inputLaptop").change(function () {
-        $(".laptop-form").submit()
-        let selected = $(".laptop:selected").text()
-        if (selected == "Dell") {
+        let selectedLaptop = $(".laptop:selected").text()
+        if ( selectedLaptop == "Dell") {
             resetLaptops()
             dell.forEach(element => {
                 $(".buttonsLaptop").append(
-                    `<button type="button" class="m-2 location-button btn btn-secondary rounded-pill">
+                    `<button type="button" class="m-2 laptop-button btn btn-secondary rounded-pill">
                     ${element}</button>`
                 )
             });
-        } else if (selected == "Apple") {
+        } else if (selectedLaptop == "Apple") {
             resetLaptops()
             apple.forEach(element => {
                 $(".buttonsLaptop").append(
-                    `<button type="button" class="m-2 location-button btn btn-secondary rounded-pill">
+                    `<button type="button" class="m-2 laptop-button btn btn-secondary rounded-pill">
                     ${element}</button>`
                 )
 
             })
-        } else if (selected == "Hp") {
+        } else if ( selectedLaptop == "Hp") {
             resetLaptops()
             hp.forEach(element => {
                 $(".buttonsLaptop").append(
-                    `<button type="button" class="m-2 location-button btn btn-secondary rounded-pill">
+                    `<button type="button" class="m-2 laptop-button btn btn-secondary rounded-pill">
                     ${element}</button>`
                 )
             })
-        } else if (selected == "Asus") {
+        } else if ( selectedLaptop == "Asus") {
             resetLaptops()
             asus.forEach(element => {
                 $(".buttonsLaptop").append(
-                    `<button type="button" class="m-2 location-button btn btn-secondary rounded-pill">
+                    `<button type="button" class="m-2 laptop-button btn btn-secondary rounded-pill">
                     ${element}</button>`
                 )
             })
-        } else if (selected == "Lenovo") {
+        } else if (selectedLaptop == "Lenovo") {
             resetLaptops()
             lenovo.forEach(element => {
                 $(".buttonsLaptop").append(
-                    `<button type="button" class="m-2 location-button btn btn-secondary rounded-pill">
+                    `<button type="button" class="m-2 laptop-button btn btn-secondary rounded-pill">
                     ${element}</button>`
                 )
             })
@@ -114,6 +136,11 @@ $(document).ready(function () {
         }
 
     })
+    // CLEAR PRIOR SELECTS
+    function resetLaptops() {
+        $(".buttonsLaptop").empty()
+    }
+    
 
 
 

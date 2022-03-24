@@ -177,7 +177,12 @@ input[type="date"] {
         margin: .2rem 0rem
     }
 }
-.locationsBtn
+.laptop-container{
+    display: none;
+}
+.date-container{
+    display: none;
+}
 
 /*LAPTOP SIGNUP  */
 .height {
@@ -249,8 +254,6 @@ input[type="date"] {
     background-color: #82C232;
     border-color: #82C232;
 }
-
-
 .social {
     height: 50px;
     width: 50px;
@@ -274,6 +277,14 @@ input[type="date"] {
 .login-link:hover{
     color: #82C232;
     font-size: 17px;
+}
+.register-container{
+    display: none;
+}
+.booking-container{
+    display: none;
+    height: 100vh;
+
 }
 
 

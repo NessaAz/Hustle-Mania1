@@ -27,22 +27,21 @@
     <!--FontAwsome-->
     <script src="https://use.fontawesome.com/00f3447240.js"></script>
 
-     <!-- Particles JS Logic-->
-     <script type="text/javascript" src="./js/particles.js" defer></script>
-     <script type="text/javascript" src="./js/particles.js" defer></script>
- 
-     <!--JS Business Logic-->
-     <script src="./js/bl-hustle.js" defer></script>
-     <!-- JS UI Logic-->
-     <script src="./js/ui-hustle.js" defer></script>
+    <!-- Particles JS Logic-->
+    <script type="text/javascript" src="./js/particles.js" defer></script>
+    <script type="text/javascript" src="./js/particles.js" defer></script>
+
+    <!--JS Business Logic-->
+    <script src="./js/bl-hustle.js" defer></script>
+    <!-- JS UI Logic-->
+    <script src="./js/ui-hustle.js" defer></script>
 
 </head>
 
 <body>
     <!--Booking or Signup Selection Page-->
-    <section class="container p-5 selection">
+    <section class="selection container p-5">
         <div class="row gx-5">
-
             <!--Redirects to laptop signup page-->
             <div class="col-md-6 p-5">
                 <h1 class="p-2">Rent Out Laptop</h1>
@@ -74,8 +73,7 @@
     </section>
 
     <!--Booking Section-->
-    <section class="booking container p-5">
-
+    <section class="booking-container container p-5 m-5">
         <form class="location-form m-5">
             <h1 class="fs-1">WHERE ARE YOU LOCATED?</h1>
             <div class="form-group form-control-lg">
@@ -90,12 +88,12 @@
                 </select>
                 <div class="buttonsLocate"></div>
             </div>
-            
-            
             <!--Add a button with locations based on input sensed-->
         </form>
+    </section>
 
-        <!--Next Page of booking-->
+    <!--Next Page of booking-->
+    <section class="laptop-container container p-5">
         <form class="laptop-form m-5 ">
             <h1 class="fs-1">WHICH LAPTOP WOULD YOU LIKE TO BOOK?</h1>
             <div class="form-group form-control-lg">
@@ -108,43 +106,46 @@
                     <option class="laptop">Lenovo</option>
                     <option class="laptop">Asus</option>
                 </select>
+                    <!--Add a button with laptops based on input sensed-->
                 <div class="buttonsLaptop"></div>
             </div>
-            <!--Add a button with laptops based on input sensed-->
-        </form> 
-    </section>
+        </form>
+    </section>  
 
     <!--Date and time picker-->
-    <section class="container p-5">
+    <section class="date-container container p-5">
         <h1 class="fs-1 text-center">SELECT BOOKING DATE AND TIME</h1>
         <div class="wrapper bg-white">
             <form action="#">
                 <div class="form-group d-sm-flex margin">
-                    <div class="d-flex align-items-center flex-fill me-sm-1 my-sm-0 my-4 border-bottom position-relative">
+                    <div
+                        class="d-flex align-items-center flex-fill me-sm-1 my-sm-0 my-4 border-bottom position-relative">
                         <label for="time">From</label>
-                        <input type="time" required  class="form-control">
-                        
+                        <input type="time" required class="form-control">
+
                     </div>
-                    <div class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative">
+                    <div
+                        class="d-flex align-items-center flex-fill ms-sm-1 my-sm-0 my-4 border-bottom position-relative">
                         <label for="date">To</label>
-                        <input type="time" required  class="form-control">
+                        <input type="time" required class="form-control">
                     </div>
                 </div>
-                <div class="form-group d-sm-flex margin">                        
+                <div class="form-group d-sm-flex margin">
                     <div class="d-flex align-items-center flex-fill me-sm1 my-sm-0 border-bottom position-relative">
                         <input type="date" required placeholder="Date" class="form-control">
                     </div>
                 </div>
                 <div class="form-group my-3">
-                    <div class="btn btn-primary rounded-0 d-flex justify-content-center text-center p-3 date-submit">Submit </div>
+                    <div class="btn btn-primary rounded-0 d-flex justify-content-center text-center p-3 date-submit">
+                        Submit </div>
                 </div>
             </form>
         </div>
-        
+
     </section>
 
-     <!--Lapton Renter Registration-->
-     <section class="container mt-5 mb-5">
+    <!--Lapton Renter Registration-->
+    <section class="register-container container mt-5 mb-5">
         <div class="row d-flex align-items-center justify-content-center">
             <div class="col-md-6">
                 <div class="card px-5 py-5">
@@ -265,16 +266,3 @@
 </body>
 
 </html>
-        
-        
-        
-
-
-
-   
-
-
-
-
-
-
