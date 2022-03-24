@@ -8,6 +8,14 @@ body{
     overflow-x: hidden;
 
 }
+#particles-js{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+}
+
 /*HOME PAGE SECTION*/
 .home {
     overflow-x: hidden;
