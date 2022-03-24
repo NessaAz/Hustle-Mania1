@@ -1,1 +1,2 @@
-# Hustle-Mania1
+# Project Name
+Hustle Mania
