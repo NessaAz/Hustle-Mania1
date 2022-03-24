@@ -34,7 +34,17 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
-.team h2{
+
+.button button{
+    position: absolute;
+    bottom: 30px;
+    background-color: #82C232;
+    color: white;
+    border: none;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
 
 }
 
