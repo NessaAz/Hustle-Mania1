@@ -58,7 +58,7 @@ body{
     color: #82C232  ;
 }
 
-.button button{
+.button button {
     position: absolute;
     bottom: 30px;
     left: 80vw;
@@ -71,3 +71,4 @@ body{
     padding: 10px;
 
 }
+
