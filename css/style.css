@@ -10,6 +10,7 @@ body{
 
 
 /* SELECTION PAGE */
+
 .book-button{
    background-color: #82C232;
    color: white;  
@@ -286,7 +287,24 @@ input[type="date"] {
     height: 100vh;
 
 }
-
+.spinner-grow{
+    display: none;
+    height: 100vh;
+    text-align: center;
+    margin-left: 50%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+.modal{
+    height: 100vh;
+}
+.bookingDisplayBtn{
+    display: none;
+}
+.bookingDisplayEmpty{
+    height: 100vh;
+    display: none;
+}
 
 
 

@@ -278,7 +278,21 @@ $(document).ready(function () {
         $(".buttonsLaptop").empty()
     }
     
-    
+    // CALCULATE AMOUNT OF TIME 
+    $(".date-submit").on("click", function(){
+        $(".outer-wrapper").hide()
+        $(".spinner-grow").show().fadeOut(1000, function(){
+            $(".bookingDisplayEmpty").show()
+            $(".bookingDisplayBtn").click()
+        })
+
+        
+    })
+    $('.close').on("click", function(){
+        $(".selection").show()
+
+
+    })
 
 
 
