@@ -10,6 +10,7 @@ body{
 
 
 /* SELECTION PAGE */
+
 .book-button{
    background-color: #82C232;
    color: white;  
@@ -177,7 +178,11 @@ input[type="date"] {
         margin: .2rem 0rem
     }
 }
-.locationsBtn
+
+.date-container{
+    display: none;
+    height: 75vh;
+}
 
 /*LAPTOP SIGNUP  */
 .height {
@@ -189,7 +194,10 @@ input[type="date"] {
     background-color: #222629;
     color: #fff
 }
-
+.laptop-container{
+    display: none;
+    height: 75vh;
+}
 .circle {
     height: 20px;
     width: 20px;
@@ -249,8 +257,6 @@ input[type="date"] {
     background-color: #82C232;
     border-color: #82C232;
 }
-
-
 .social {
     height: 50px;
     width: 50px;
@@ -275,7 +281,32 @@ input[type="date"] {
     color: #82C232;
     font-size: 17px;
 }
+.register-container{
+    display: none;
+}
+.booking-container{
+    display: none;
+    height: 75vh;
 
+}
+.spinner-grow{
+    display: none;
+    height: 100vh;
+    text-align: center;
+    margin-left: 50%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+.modal{
+    height: 100vh;
+}
+.bookingDisplayBtn{
+    display: none;
+}
+.bookingDisplayEmpty{
+    height: 100vh;
+    display: none;
+}
 
 
 
