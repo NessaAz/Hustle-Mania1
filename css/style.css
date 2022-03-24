@@ -4,7 +4,74 @@ body{
     font-family: 'Fredoka', sans-serif;
     margin: 0;
     padding: 0;
-    
+
+    width: 100%;
+    background-color:#191a1c;
+}
+
+/*HOME PAGE SECTION*/
+.home {
+    overflow-x: hidden;
+}
+
+.title {
+    color: #82C232;
+    font-size: 36px;
+}
+
+.title1 {
+    position: absolute;
+    left: 30vw;
+    text-align: center;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.description {
+    position: absolute;
+    top: 50vh;
+    left: 12vw;
+    text-align: center;
+    font-style:normal;
+    font-weight: 80;
+    font-size: 35px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.scroll {
+    position: absolute;
+    top: 85vh;
+    left: 49vw;
+    text-align: center;
+    font-style:normal;
+    font-weight: 120;
+    font-size: 20px;
+    font-stretch: narrower;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.fa-solid {
+    color: #82C232  ;
+}
+
+.button button{
+    position: absolute;
+    bottom: 30px;
+    left: 80vw;
+    background-color: #82C232;
+    color: white;
+    border: none;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+
+}   
     
 }
 
@@ -436,6 +503,7 @@ input[type="date"] {
 #footer a:hover{
     color: blue;
 }
+
 
 
 
