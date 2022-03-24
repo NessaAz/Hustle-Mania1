@@ -181,6 +181,7 @@ input[type="date"] {
 
 .date-container{
     display: none;
+    height: 75vh;
 }
 
 /*LAPTOP SIGNUP  */
@@ -195,6 +196,7 @@ input[type="date"] {
 }
 .laptop-container{
     display: none;
+    height: 75vh;
 }
 .circle {
     height: 20px;
@@ -284,7 +286,7 @@ input[type="date"] {
 }
 .booking-container{
     display: none;
-    height: 100vh;
+    height: 75vh;
 
 }
 .spinner-grow{
