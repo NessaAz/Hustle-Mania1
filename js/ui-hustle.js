@@ -248,8 +248,9 @@ $(document).ready(function () {
         $(".buttonsLaptop").empty()
     }
     
-    // CALCULATE AMOUNT OF TIME 
+     
     $(".date-submit").on("click", function(){
+        calculate ()
         $(".date-container").hide()
         $(".bookingDisplayBtn").click()
     })
@@ -272,13 +273,33 @@ $(document).ready(function () {
         window.location = "https://calendar.google.com/calendar/embed?src=c_ptl8cb807qr3ule883v8mcb6ak%40group.calendar.google.com&ctz=Africa%2FNairobi"
 
     })
-    $(".product-btn").onmouseover(function(){
-        $(this).addClass()
-    })
     $(".product-btn").on("click",  function(){
             $(".booking-container").show()
 
     })
+
+
+    // CALCULATE AMOUNT OF TIME
+    function calculate (){
+        let start = $('.start').val()
+        let end = $('.end').val()
+    
+        start = start.split(":")
+        send  = end.split(":")
+    
+        let from = (start[0] * 60 * 60) + (start[0] * 60)
+        let to = (end[0] * 60 * 60) + (end[0] * 60)
+    
+        let duration = (to -from) / 60
+    
+        console.log(duration)
+
+    }
+
+
+
+
+
     
 
     
