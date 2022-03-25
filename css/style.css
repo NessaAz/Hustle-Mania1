@@ -99,9 +99,59 @@ canvas {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #222629;
+    /* background-color: #222629; */
     color: white;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
+    /* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+    100% { background-position: $bg-width $bg-height; }
+  }
+  @-moz-keyframes    bg-scrolling-reverse {
+    100% { background-position: $bg-width $bg-height; }
+  }
+  @-o-keyframes      bg-scrolling-reverse {
+    100% { background-position: $bg-width $bg-height; }
+  }
+  @keyframes         bg-scrolling-reverse {
+    100% { background-position: $bg-width $bg-height; }
+  }
+  
+  @-webkit-keyframes bg-scrolling {
+    0% { background-position: $bg-width $bg-height; }
+  }
+  @-moz-keyframes    bg-scrolling {
+    0% { background-position: $bg-width $bg-height; }
+  }
+  @-o-keyframes      bg-scrolling {
+    0% { background-position: $bg-width $bg-height; }
+  }
+  @keyframes         bg-scrolling {
+    0% { background-position: $bg-width $bg-height; }
+  }
+  -webkit-animation: bg-scrolling-reverse .92s infinite; /* Safari 4+ */
+  -moz-animation:    bg-scrolling-reverse .92s infinite; /* Fx 5+ */
+  -o-animation:      bg-scrolling-reverse .92s infinite; /* Opera 12+ */
+  animation:         bg-scrolling-reverse .92s infinite; /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function:    linear;
+  -o-animation-timing-function:      linear;
+  animation-timing-function:         linear;
 }
+  
+  .img2::before {
+    content: "THE TEAM";
+    color: #82C232;
+    font-size: 4rem;
+    font-weight: 100;
+    font-style: normal;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    /* margin-bottom: 100px; */
+  
+}
+
+
+
 
 
 
