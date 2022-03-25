@@ -42,23 +42,51 @@ canvas {
 .scroll {
     text-align: center;
     color: #FFFFFF;
+    top: 90vh;
 }
 .scroll-text{
     color: white;
 }
+
 .fa-solid {
     color: #82C232  ;
 }
+
+.scroll-text,
+.scroll {
+
+    text-align: center;
+    animation: updown 500ms infinite alternate;
+}
+@keyframes updown { 
+    0%{
+            transform: translate(0px,10px);
+     }
+    100%{
+            transform: translate(0px,0px);
+    }
+}
+
 .home-button{
     background-color: #82C232;
     border-color: #82C232;
-    float: right;
+    float:right;
 }
+
 .home-button:hover{
     background-color: white;
     border-color: white;
     color: #222629;
 }
+
+.vl {
+    position:absolute;
+    height: 700px;
+    border-left: 2px solid #6B6E70;
+    left: 9%;
+}
+
+
 /* About Section */
 .banner{
     background-image: url("../assets/about-us.jpg");
@@ -91,6 +119,7 @@ canvas {
 }
 /*Team*/
 
+    
 .team{
     margin: 0;
     display: flex;
@@ -686,6 +715,8 @@ label.radio span {
     font-size: 15px
 }
 
+
 .order-button {
     height: 50px
 }
+
