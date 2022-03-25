@@ -305,6 +305,12 @@ $(document).ready(function () {
     
 
 
+    // $(".pro img").click(function(){
+    //     $(".pro img").toggle();
+    //     $(".textt").toggle()
+    // });
+    
+
 
 
 })
