@@ -56,7 +56,7 @@ canvas {
 
 .scroll-text,
 .scroll {
-    font-size: vw;
+
     text-align: center;
     animation: updown 500ms infinite alternate;
 }
@@ -72,8 +72,9 @@ canvas {
 .home-button{
     background-color: #82C232;
     border-color: #82C232;
-    float: right;
+    float:right;
 }
+
 .home-button:hover{
     background-color: white;
     border-color: white;
