@@ -13,4 +13,10 @@ let lenovo = ["IdeaPad", "Legion", "ThinkPad", "ThinkBook", "Yoga"]
 let asus = ["ExpertBook", "Pro", "ProArt", "Transformer", "TUF"]
  
 
+let Booking = function(location, laptop, duration){
+    this.laptop = laptop;
+    this.location = location
+    this.duration = duration
+}
+
 
