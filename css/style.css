@@ -65,6 +65,15 @@ canvas {
     border-color: white;
     color: #222629;
 }
+
+.vl {
+    position:absolute;
+    height: 700px;
+    border-left: 2px solid #6B6E70;
+    left: 7%;
+}
+
+
 /* About Section */
 .banner{
     background-image: url("../assets/about-us.jpg");
