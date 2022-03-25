@@ -50,11 +50,25 @@ canvas {
     color: white;
 }
 
-
-
 .fa-solid {
     color: #82C232  ;
 }
+
+.scroll-text,
+.scroll {
+    font-size: vw;
+    text-align: center;
+    animation: updown 500ms infinite alternate;
+}
+@keyframes updown { 
+    0%{
+            transform: translate(0px,10px);
+     }
+    100%{
+            transform: translate(0px,0px);
+    }
+}
+
 .home-button{
     background-color: #82C232;
     border-color: #82C232;
@@ -70,7 +84,7 @@ canvas {
     position:absolute;
     height: 700px;
     border-left: 2px solid #6B6E70;
-    left: 7%;
+    left: 9%;
 }
 
 
