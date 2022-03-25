@@ -146,8 +146,13 @@ canvas {
     font-style: normal;
     font-family: 'Fredoka', sans-serif;
     text-align: center;
-    /* margin-bottom: 100px; */
   
+}
+.pro img a :hover{
+    transform: scale(1.25);
+}
+.textt{
+    color: black;
 }
 
 
