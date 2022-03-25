@@ -1,5 +1,6 @@
 $(document).ready(function () {
     
+    
 
     // Ease in the lender registration form
     $(".register-button").on("click", function(){
@@ -15,15 +16,18 @@ $(document).ready(function () {
     })
     // Ease in the booking registration form
     $(".book-button").on("click", function(){
-        $(".selection").animate({
-            position: "absolute",
-            right: "0",
-        }, 1000, function(){$(".selection").hide()})
-        $(".booking-container").animate({
-            right: "+= 100",
-        }, 1000, function(){
-            $(".booking-container").show()
-        })
+            $(".selection").animate({
+                position: "absolute",
+                right: "0",
+            }, 1000, function(){$(".selection").hide()})
+            $(".booking-container").animate({
+                right: "+= 100",
+            }, 1000, function(){
+                $(".booking-container").show()
+            })
+
+        
+
     })
 
 
@@ -248,17 +252,28 @@ $(document).ready(function () {
         $(".buttonsLaptop").empty()
     }
     
+    
      
     $(".date-submit").on("click", function(){
-        calculate ()
-        $(".date-container").hide()
-        $(".bookingDisplayBtn").click()
+            calculate()
+            $(".date-container").hide()
+            $(".bookingDisplayBtn").click()
+    
     })
     $(".contact-details").on("click", function(){
-            $(".booking-confirmation").show().click($(this).hide())
-            $("#bookingDisplay").hide()
-
+        $(".booking-confirmation").show()
+        generateBarCode()
+        $(".confirm-close").show()
+        $("#bookingDisplay").hide()
+        $(".reminder").on("click", function(){
+            window.location = "https://calendar.google.com/calendar/embed?src=c_ptl8cb807qr3ule883v8mcb6ak%40group.calendar.google.com&ctz=Africa%2FNairobi"
+    
+        })
+                    
     })
+
+    
+    
 
 
 
@@ -269,21 +284,57 @@ $(document).ready(function () {
     $('.register-close').on("click", function(){
         $(".register-container").hide()
     })
-    $(".reminder").on("click", function(){
-        window.location = "https://calendar.google.com/calendar/embed?src=c_ptl8cb807qr3ule883v8mcb6ak%40group.calendar.google.com&ctz=Africa%2FNairobi"
-
-    })
+    
     $(".product-btn").on("click",  function(){
             $(".booking-container").show()
 
     })
 
+    $(".wishlist").on("click", function(){
+        $(this).addClass("wishlist-color")
+    })
+
+    function generateBarCode(){
+    var nric = $('#text').val();
+    var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + nric + '&amp;size=50x50';
+    $('#barcode').attr('src', url)
+    }
+
 
     // CALCULATE AMOUNT OF TIME
     function calculate (){
+        let duration = $("#inputTime").val()
+        let date = $("#inputDate").val()
+        let laptop = $("#inputLaptop").val()
+        let location = $("#inputCity").val()
+
+        let d;
+
+        if (laptop == "Apple"){
+            d = duration * 1000  
+        } else if (laptop == "Dell"){
+            d = duration * 500
+        } else if (laptop == "Lenovo"){
+            d = duration * 600
+        } else if (laptop == "Asus"){
+            d = duration * 700
+        } else if (laptop == "Asus"){
+            d = duration * 600
+        }
+
+        let s = 300
+        let i = 500 
+        let total = i + s + d
+        $(".insuarance").text(i) 
+        $(".spacePrice").text(s)
+        $(".dPrice").text(d)
+        $(".total").text(total)
+       
+
+        
+    }
         
 
-    }
 
 
 
