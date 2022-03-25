@@ -44,15 +44,16 @@ canvas {
     color: #FFFFFF;
     top: 90vh;
 }
-.scroll-text{
+.scroll-text a{
     color: white;
+    text-decoration: none;
 }
 
 .fa-solid {
     color: #82C232  ;
 }
 
-.scroll-text,
+
 .scroll {
 
     text-align: center;
@@ -79,12 +80,6 @@ canvas {
     color: #222629;
 }
 
-.vl {
-    position:absolute;
-    height: 700px;
-    border-left: 2px solid #6B6E70;
-    left: 9%;
-}
 
 
 /* About Section */
@@ -591,7 +586,9 @@ label.radio span {
 
 
 
-
+.visible{
+    opacity: 1;
+}
 
 
 /*Footer Section*/
@@ -720,6 +717,12 @@ label.radio span {
 #footer a:hover{
     color: blue;
 }
+.bookPrintClose{
+    display: none;
+    font-size: 40px;
+    margin: 5px;
+
+}
 
 
 /*Booking Confirmation*/
@@ -775,3 +778,7 @@ label.radio span {
     height: 50px
 }
 
+
+.modal-backdrop.show {
+    opacity: 0 !important; 
+}
