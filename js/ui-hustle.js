@@ -281,18 +281,7 @@ $(document).ready(function () {
 
     // CALCULATE AMOUNT OF TIME
     function calculate (){
-        let start = $('.start').val()
-        let end = $('.end').val()
-    
-        start = start.split(":")
-        send  = end.split(":")
-    
-        let from = (start[0] * 60 * 60) + (start[0] * 60)
-        let to = (end[0] * 60 * 60) + (end[0] * 60)
-    
-        let duration = (to -from) / 60
-    
-        console.log(duration)
+        
 
     }
 
