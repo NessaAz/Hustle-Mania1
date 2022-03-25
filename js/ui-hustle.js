@@ -29,31 +29,6 @@ $(document).ready(function () {
 
     // ease in Laptop selection page 
 
-    
-
-
-
-
-
-            /*
-             
-        $(this).on("submit", function(){
-            $(".booking-container").animate({
-                position: "absolute",
-                right: "0",
-            }, 1000, function(){$(".booking-container").show()})
-            $(".laptop-container").animate({
-                right: "+= 100",
-            }, 1000, function(){
-                $(".laptop-container").hide()
-            })
-        })
-        
-    }) */
-       
-    
-
-
     //LOCATION BUTTON THAT POPUP ON SELECT
     $("#inputCity").change(function () {
         let selectedLocation = $(".location:selected").text()
@@ -156,8 +131,6 @@ $(document).ready(function () {
         } else {
             resetLocations()
         }
-        
-
     })
 
     // CLEAR PRIOR SELECTS
@@ -165,8 +138,6 @@ $(document).ready(function () {
         $(".buttonsLocate").empty()
     }
     // SLIDE IN THE LAPTOP SELECTION FORM 
-
-
    
     // LAPTOP BUTTONS THAT POPUP ON SELECT
     $("#inputLaptop").change(function () {
@@ -279,19 +250,39 @@ $(document).ready(function () {
     
     // CALCULATE AMOUNT OF TIME 
     $(".date-submit").on("click", function(){
-        $(".outer-wrapper").hide()
-        $(".spinner-grow").show().fadeOut(1000, function(){
-            $(".bookingDisplayEmpty").show()
-            $(".bookingDisplayBtn").click()
-        })
-
-        
+        $(".date-container").hide()
+        $(".bookingDisplayBtn").click()
     })
+    $(".contact-details").on("click", function(){
+            $(".booking-confirmation").show().click($(this).hide())
+            $("#bookingDisplay").hide()
+
+    })
+
+
+
     $('.close').on("click", function(){
         $(".selection").show()
+    })
 
+    $('.register-close').on("click", function(){
+        $(".register-container").hide()
+    })
+    $(".reminder").on("click", function(){
+        window.location = "https://calendar.google.com/calendar/embed?src=c_ptl8cb807qr3ule883v8mcb6ak%40group.calendar.google.com&ctz=Africa%2FNairobi"
 
     })
+    $(".product-btn").onmouseover(function(){
+        $(this).addClass()
+    })
+    $(".product-btn").on("click",  function(){
+            $(".booking-container").show()
+
+    })
+    
+
+    
+
 
 
 
