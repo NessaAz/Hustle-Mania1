@@ -1,5 +1,6 @@
 $(document).ready(function () {
     
+    
 
     // Ease in the lender registration form
     $(".register-button").on("click", function(){
@@ -15,44 +16,22 @@ $(document).ready(function () {
     })
     // Ease in the booking registration form
     $(".book-button").on("click", function(){
-        $(".selection").animate({
-            position: "absolute",
-            right: "0",
-        }, 1000, function(){$(".selection").hide()})
-        $(".booking-container").animate({
-            right: "+= 100",
-        }, 1000, function(){
-            $(".booking-container").show()
-        })
+            $(".selection").animate({
+                position: "absolute",
+                right: "0",
+            }, 1000, function(){$(".selection").hide()})
+            $(".booking-container").animate({
+                right: "+= 100",
+            }, 1000, function(){
+                $(".booking-container").show()
+            })
+
+        
+
     })
 
 
     // ease in Laptop selection page 
-
-    
-
-
-
-
-
-            /*
-             
-        $(this).on("submit", function(){
-            $(".booking-container").animate({
-                position: "absolute",
-                right: "0",
-            }, 1000, function(){$(".booking-container").show()})
-            $(".laptop-container").animate({
-                right: "+= 100",
-            }, 1000, function(){
-                $(".laptop-container").hide()
-            })
-        })
-        
-    }) */
-       
-    
-
 
     //LOCATION BUTTON THAT POPUP ON SELECT
     $("#inputCity").change(function () {
@@ -156,8 +135,6 @@ $(document).ready(function () {
         } else {
             resetLocations()
         }
-        
-
     })
 
     // CLEAR PRIOR SELECTS
@@ -165,8 +142,6 @@ $(document).ready(function () {
         $(".buttonsLocate").empty()
     }
     // SLIDE IN THE LAPTOP SELECTION FORM 
-
-
    
     // LAPTOP BUTTONS THAT POPUP ON SELECT
     $("#inputLaptop").change(function () {
@@ -277,21 +252,104 @@ $(document).ready(function () {
         $(".buttonsLaptop").empty()
     }
     
-    // CALCULATE AMOUNT OF TIME 
+    
+     
     $(".date-submit").on("click", function(){
-        $(".outer-wrapper").hide()
-        $(".spinner-grow").show().fadeOut(1000, function(){
-            $(".bookingDisplayEmpty").show()
+            calculate()
+            $(".date-container").hide()
             $(".bookingDisplayBtn").click()
-        })
-
-        
+    
     })
+    $(".contact-details").on("click", function(){
+        $(".booking-confirmation").show()
+        generateBarCode()
+        $(".confirm-close").show()
+        $("#bookingDisplay").hide()
+        $(".reminder").on("click", function(){
+            window.location = "https://calendar.google.com/calendar/embed?src=c_ptl8cb807qr3ule883v8mcb6ak%40group.calendar.google.com&ctz=Africa%2FNairobi"
+    
+        })
+                    
+    })
+
+    
+    
+
+
+
     $('.close').on("click", function(){
         $(".selection").show()
+    })
 
+    $('.register-close').on("click", function(){
+        $(".register-container").hide()
+    })
+    
+    $(".product-btn").on("click",  function(){
+            $(".booking-container").show()
 
     })
+
+    $(".wishlist").on("click", function(){
+        $(this).addClass("wishlist-color")
+    })
+
+    function generateBarCode(){
+    var nric = $('#text').val();
+    var url = 'https://api.qrserver.com/v1/create-qr-code/?data=' + nric + '&amp;size=50x50';
+    $('#barcode').attr('src', url)
+    }
+
+
+    // CALCULATE AMOUNT OF TIME
+    function calculate (){
+        let duration = $("#inputTime").val()
+        let date = $("#inputDate").val()
+        let laptop = $("#inputLaptop").val()
+        let location = $("#inputCity").val()
+
+        let d;
+
+        if (laptop == "Apple"){
+            d = duration * 1000  
+        } else if (laptop == "Dell"){
+            d = duration * 500
+        } else if (laptop == "Lenovo"){
+            d = duration * 600
+        } else if (laptop == "Asus"){
+            d = duration * 700
+        } else if (laptop == "Asus"){
+            d = duration * 600
+        }
+
+        let s = 300
+        let i = 500 
+        let total = i + s + d
+        $(".insuarance").text(i) 
+        $(".spacePrice").text(s)
+        $(".dPrice").text(d)
+        $(".total").text(total)
+       
+
+        
+    }
+        
+
+
+
+
+
+
+    
+
+    
+
+
+    // $(".pro img").click(function(){
+    //     $(".pro img").toggle();
+    //     $(".textt").toggle()
+    // });
+    
 
 
 
